@@ -1,4 +1,5 @@
 # iOS ESP32 BLE Remote Control Demo
+![](Demo-960-720-12.gif)
 
 This Swift project demonstrates how to manage Bluetooth Low Energy (BLE) connections with ESP32 devices using ```CoreBluetooth``` framework. The application allows for discovering, connecting to, and communicating with ESP32 peripherals.
 
@@ -58,6 +59,8 @@ class BLEManager: NSObject, ObservableObject, CBCentralManagerDelegate, CBPeriph
 ### Central Manager Delegate Methods
 Handles central manager events like state updates, discovering peripherals, and managing connections.
 
+More logic in the source code.
+
 ```swift
 func centralManagerDidUpdateState(_ central: CBCentralManager) { /* ... */ }
 func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String: Any], rssi RSSI: NSNumber) { /* ... */ }
@@ -67,6 +70,8 @@ func centralManager(_ central: CBCentralManager, didDisconnectPeripheral periphe
 
 ### Peripheral Delegate Methods
 Manages peripheral-related events such as discovering services and characteristics, and handling updates to characteristic values.
+
+More logic in the source code.
 
 ```swift
 func peripheral(_ peripheral: CBPeripheral, didDiscoverServices error: Error?) { /* ... */ }
