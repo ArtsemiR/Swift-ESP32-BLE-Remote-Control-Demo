@@ -79,8 +79,8 @@ override init() {
     centralManager = CBCentralManager(delegate: self, queue: nil)
 }
 ```
->**Key Function**: Initializes the BLEManager and sets up the central manager, which is responsible for managing BLE connections.\
->**Working Principle**: When an instance of BLEManager is created, it automatically creates a CBCentralManager. This central manager is crucial for any BLE operation, as it scans for, connects to, and manages data exchange with BLE peripherals.
+**Key Function**: Initializes the BLEManager and sets up the central manager, which is responsible for managing BLE connections.\
+**Working Principle**: When an instance of BLEManager is created, it automatically creates a CBCentralManager. This central manager is crucial for any BLE operation, as it scans for, connects to, and manages data exchange with BLE peripherals.
 
 ### Central Manager Delegate Methods
 
