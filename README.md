@@ -8,13 +8,13 @@ The project for setting up advertising, characteristics and initializing the BLE
 ![](ble_scheme.png)
 The scheme represents a simplified flow of how a central device, such as an iPhone, interacts with a peripheral device through Bluetooth Low Energy (BLE):
 1. The iPhone starts looking for BLE devices nearby.
-2. The ESP32 is broadcasting a signal to announce its presence to devices like the iPhone.
-3. The iPhone picks up this signal, learning that the ESP32 is available to connect.
-4. The iPhone successfully connects to the ESP32, which then stops broadcasting since it's no longer just advertising but is now connected.
-5. The iPhone asks the ESP32 to list its services.
-6. The ESP32 sends back information about the services it offers.
+2. The peripheral is broadcasting a signal to announce its presence to devices like the iPhone.
+3. The iPhone picks up this signal, learning that the peripheral is available to connect.
+4. The iPhone successfully connects to the peripheral, which then stops broadcasting since it's no longer just advertising but is now connected.
+5. The iPhone asks the peripheral to list its services.
+6. The peripheral sends back information about the services it offers.
 7. The iPhone requests the details of these services, referred to as "characteristics"
-8. The ESP32 provides this detailed characteristics information.
+8. The peripheral provides this detailed characteristics information.
 9. With all the necessary information exchanged, the iPhone is now ready to interact with the ESP32 for its intended use.
 
 ## Configuration
