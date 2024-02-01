@@ -1,5 +1,5 @@
 # Managing Bluetooth Low Energy (BLE) Connections in Swift Using CoreBluetooth
-![](Demo-960-720-12.gif)
+[![](Demo-960-720-12.gif)](https://www.youtube.com/embed/-qCLrqII1bs?si=Fkz9imGx4UmX1UlG)
 
 This Swift project demonstrates how to manage Bluetooth Low Energy (BLE) connections with ESP32 devices using ```CoreBluetooth``` framework. The application allows for discovering, connecting to, and communicating with ESP32 peripherals.
 
